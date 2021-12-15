@@ -1,0 +1,55 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/*
+body {
+   width: 100vw;
+   min-height: 70vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+*/
+.parent {
+   width: 212px;
+   height: 90px;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.parent > .child {
+   width: 70px;
+   height: 70px;
+   border: 1px solid #000;
+   display: grid;
+   place-items: center;
+   font-family: Sans-Serif;
+   font-size: 26px;
+}
+
+.parent > .child:nth-child(1),
+.parent > .child:nth-child(4),
+.parent > .child:nth-child(7) {
+   border-left: none;
+}
+
+.parent > .child:nth-child(3),
+.parent > .child:nth-child(6),
+.parent > .child:nth-child(9) {
+   border-right: none;
+}
+
+.parent > .child:nth-child(1),
+.parent > .child:nth-child(2),
+.parent > .child:nth-child(3) {
+   border-top: none;
+}
+
+.parent > .child:nth-child(7),
+.parent > .child:nth-child(8),
+.parent > .child:nth-child(9) {
+   border-bottom: none;
+}
