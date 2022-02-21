@@ -40,7 +40,7 @@ class Particle {
 }
 
 function preload() {
-   mySong = loadSound('./ring.mp3');
+   mySong = loadSound('./sounds/ring.mp3');
 }
 
 function setup() {
